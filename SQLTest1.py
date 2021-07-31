@@ -1,5 +1,4 @@
 import discord
-import mysql
 import urllib
 
 url = "http://192.168.1.148/password.html"
