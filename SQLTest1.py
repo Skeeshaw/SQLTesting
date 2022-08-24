@@ -5,7 +5,7 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 bot = commands.Bot(command_prefix='-')
 
-url = "http://192.168.1.148/SQLpassword.html"
+url = "http://localhost/sqlpassword.txt" 
 file = urllib.request.urlopen(url) #get connection to webpage and read string
 for line in file:
     decoded_line = line.decode("utf-8")
@@ -15,14 +15,14 @@ conn = pymysql.connect(
   host="localhost",
   user="heisenberg",
   password=password,
-  database="test2"
+  database="test"
 )
   
 
 ##############################################
 #discord bot section
 
-url = "http://192.168.1.148/password.html"
+url = "http://localhost/password.txt"
 file = urllib.request.urlopen(url) #get connection to webpage and read string
 
 for line in file:
